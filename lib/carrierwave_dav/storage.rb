@@ -1,8 +1,8 @@
 require 'net/dav'
 
 module CarrierWave
-  module Dav
-    class Storage < CarrierWave::Storage::Abstract
+  module Storage
+    class Dav < Abstract
 
       def initialize(uploader, dav_path)
         super(uploader)
